@@ -1,14 +1,13 @@
 package com.example.bank.types;
 
-import com.example.bank.exception.BusinessException;
 
 public class AccountNumber {
 
     private String value;
 
-    public AccountNumber(String value) throws BusinessException {
+    public AccountNumber(String value) {
         if (value == null || "".equals(value)){
-            throw new BusinessException("账号不能为空");
+            throw new IllegalArgumentException("账号不能为空");
         }
         this.value = value;
     }

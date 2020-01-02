@@ -14,7 +14,7 @@ public class ExchangeRate {
         this.target = target;
     }
 
-    public Money exchageTo(Money targetMoney) throws Exception {
+    public Money exchageTo(Money targetMoney)  {
         BigDecimal targetMount = targetMoney.getAmout().multiply(rage);
         return new Money(targetMount, target);
     }

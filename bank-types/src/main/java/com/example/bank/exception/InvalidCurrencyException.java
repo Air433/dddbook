@@ -1,4 +1,4 @@
 package com.example.bank.exception;
 
-public class InvalidCurrencyException extends Exception{
+public class InvalidCurrencyException extends IllegalArgumentException{
 }
